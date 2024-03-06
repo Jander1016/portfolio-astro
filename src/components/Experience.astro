@@ -1,0 +1,37 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "Freelancer de Applicaciones Web",
+    company: "Autónomo",
+    description:
+      "Desarrollo aplicaciones web a solicitud de clientes: Estableciendo expectativas claras sobre entregables, plazos y costos. Identificando posibles desafíos y planificando estrategias para abordarlos. Asegurándome de que el código sea limpio, eficiente y cumpla con las mejores prácticas de desarrollo."
+  },
+  {
+    date: "Actualmente...",
+    title: "Apoyo al aprendizaje - Desarrollo Web",
+    company: "Autónomo",
+    description:
+      "Colaboro estrechamente con un equipo de instructores y expertos en la materia en un programa educativo de vanguardia. Nuestra misión es preparar a los estudiantes para triunfar en la industria tecnológica, dotándolos de las habilidades y herramientas necesarias para desarrollar aplicaciones web de alta calidad. Lidero sesiones de aprendizaje dinámicas, guiando a los estudiantes a través de los aspectos esenciales del desarrollo web, desde la creación de aplicaciones front-end atractivas hasta la configuración de servidores y bases de datos en el lado del servidor. Fomento un ambiente de aprendizaje interactivo, donde se promueve la colaboración, la resolución de problemas y la creatividad.",
+  },
+  {
+    date: "Noviembre 2022",
+    title: "Desarrollador Full Web Stack",
+    company: "Alkemy",
+    description:
+      "Responsable del backend del proyecto, proyecto realizado con 6 compañeros desarrolladores aplicando metodología ágil SCRUM, la aplicación fue de una billetera electrónica(wallet), Tecnologías usadas ReactJS, Redux, Tailwind CSS, GIT y Trello",
+    link: "https://github.com/Jander1016/alkybank",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>

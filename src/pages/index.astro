@@ -1,0 +1,57 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import SocialPill from "../components/SocialPill.astro";
+import LinkedinIcon from "../components/icons/LinkedIn.astro";
+import GithubIcon from "../components/icons/Github.astro";
+import MailIcon from "../components/icons/Mail.astro";
+import Experience from "../components/Experience.astro";
+---
+
+<Layout 
+	title="Portfolio de Jander Gomez Barrueta - Desarrollador y Programador Web Full Stack"
+	description="Soy un Desarrollador Web Full Stack con experiencia en Front End y Back End, destacándome en tecnologías como JavaScript, React, NodeJS, Express, MySQL, Git y Github."
+>
+	<main class="px-4">
+		<SectionContainer class="py-44 pb-20">
+			<picture class="flex flex-row gap-x-6">
+				<img
+					class="rounded-full size-24 mb-4"
+					src="https://avatars.githubusercontent.com/u/58518358?v=4"
+					alt="Jander Gomez"
+				/><a
+					href="https://linkedin.com/in/jandergomezbarrueta"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="flex justify-center items-center"
+				>
+					<Badge>Disponible para trabajar</Badge>
+				</a>
+			</picture>
+
+			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
+				Hola, soy Jander!
+			</h1>
+			<p>Desarrollador de aplicaciones web Full Stack.</p>
+			<p>Con experiencia en Front End y Back End, destacándome en tecnologías como JavaScript, TypeScript,  React, NodeJS, Express, MySQL, Git y Github.</p>
+			<nav class="flex flex-row gap-x-4 mt-8">
+				<SocialPill href="https://linkedin.com/in/jandergomezbarrueta">
+					<LinkedinIcon class="size-5" />
+					LinkedIn
+				</SocialPill>
+				<SocialPill href="https://github.com/jander1016">
+					<GithubIcon class="size-5" />
+					Github
+				</SocialPill>
+				<SocialPill href="mailto:jandergb.30@gmail.com">
+					<MailIcon class="size-5" />
+					Mail
+				</SocialPill>
+			</nav>
+		</SectionContainer>
+		<SectionContainer>
+			<Experience />
+		</SectionContainer>
+	</main>
+</Layout>
