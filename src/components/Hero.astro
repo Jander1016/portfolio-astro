@@ -1,0 +1,47 @@
+---
+const personalImageAlt = "Jander Gomez"
+import Badge from "@/components/Badge.astro"
+import LinkedInIcon from "@/components/icons/LinkedIn.astro"
+import GithubIcon from "@/components/icons/Github.astro"
+import MailIcon from "@/components/icons/Mail.astro"
+import SocialPill from "@/components/SocialPill.astro"
+---
+
+<div class="max-w-xl">
+  <figure class="flex flex-row gap-x-4">
+    <img
+      class="rounded-full shadow-lg size-24 mb-4"
+      src="/jander.webp"
+      alt={personalImageAlt}
+    />
+    <a
+      href="https://linkedin.com/in/jandergomezbarrueta"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="flex transition items-center md:justify-center md:hover:scale-105"
+    >
+      <Badge><LinkedInIcon class="rounded-sm size-4" />&nbsp;Disponible para trabajar</Badge>
+    </a>
+  </figure>
+
+  <h1 class="text-3xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white pb-8">
+    Hola, soy Jander
+  </h1>
+  <h2 class="text-pretty">
+    <span class="text-yellow-200 font-semibold text-xl">Desarrollador de aplicaciones web Full Stack.</span> Con experiencia en Front End y Back End, destacándome en tecnologías como JavaScript, TypeScript, React, NodeJS, Express, MySQL, MongoDB, Git y Github.
+  </h2>
+  <nav class="flex flex-row gap-4 mt-8">
+    <SocialPill href="https://linkedin.com/in/jandergomezbarrueta">
+      <LinkedInIcon class="size-3 md:size-5" />
+      LinkedIn
+    </SocialPill>
+    <SocialPill href="https://github.com/jander1016">
+      <GithubIcon class="size-3 md:size-5" />
+      Github
+    </SocialPill>
+    <SocialPill href="mailto:jandergb.30@gmail.com">
+      <MailIcon class="size-3 md:size-4" />
+      Mail
+    </SocialPill>
+  </nav>
+</div>
